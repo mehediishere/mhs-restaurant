@@ -1,0 +1,231 @@
+/***** 
+
+mh's Restaurant - Creative Modern Restaurant Template
+Author : Mehedi Hasan
+Support : mehedihasanp78@gmail.com
+Version : 1.0 
+
+*****/
+
+
+.navbar-effect a {
+  overflow: hidden;
+  padding: 0 4px;
+}
+
+.navbar-effect a span {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.navbar-effect a span::before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.navbar-effect a:hover span, .navbar-effect a:focus span {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.parallaxBG {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vertical-center {
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.openingHour {
+  background-image: url(../../assets/img/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg);
+}
+
+.reservation {
+  color: var(--bs-secondary);
+}
+
+.reservation:focus {
+  color: var(--bs-secondary);
+  box-shadow: none;
+  border-color: #C19D60;
+}
+
+.reservationBtn {
+  border-color: #C19D60;
+  color: var(--bs-gray-dark);
+  box-shadow: 2px 2px #C19D60;
+}
+
+.reservationBtn:hover {
+  background-color: #C19D60;
+  color: var(--bs-light);
+  border-color: #C19D60;
+}
+
+.reservationBtn:active:focus, .reservationBtn:focus {
+  box-shadow: 2px 2px #c19d60;
+}
+
+.reservationBorder {
+  -webkit-border-top-right-radius: 80px;
+  border-top-right-radius: 80px;
+  border-color: #C19D60!important;
+}
+
+.orderBtn {
+  border-color: #C19D60;
+  color: var(--bs-light);
+  box-shadow: 2px 2px #C19D60;
+}
+
+.orderBtn:hover {
+  background-color: #C19D60;
+  color: var(--bs-gray-dark);
+  border-color: #C19D60;
+}
+
+.orderBtn:active:focus, .orderBtn:focus {
+  box-shadow: 2px 2px #c19d60;
+}
+
+.orderBorder {
+  margin-top: 5vh;
+}
+
+@media (min-width: 992px) {
+  .orderBorder {
+    margin-top: 15vh;
+  }
+}
+
+.flex-column {
+  max-width: 260px;
+}
+
+/* Gallery */
+
+#gal img {
+  margin: 5px;
+}
+/*
+#gal img {
+  transition: transform 1s;
+}
+
+#gal img:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+*/
+@keyframes imageZoom {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.scale {
+  transform: scaleY(1.05);
+  padding-top: 5px;
+}
+
+.modern-form {
+  padding-top: 10vh;
+  padding-bottom: 20px;
+}
+
+.modern-form__form-container {
+  padding-top: 50px;
+}
+
+/* @media (min-width: 768px) {
+  .breakfastCombo {
+  }
+} */
+
+@media (min-width: 992px) {
+  .breakfastCombo {
+    padding-left: 1rem;
+    padding-right: 3rem;
+  }
+}
+
+/* @media (min-width: 768px) {
+  .dinnerCombo {
+  }
+} */
+
+@media (min-width: 992px) {
+  .dinnerCombo {
+    padding-left: 1rem;
+    padding-right: 3rem;
+  }
+}
+
+/* @media (min-width: 768px) {
+  .lunchCombo {
+  }
+} */
+
+@media (min-width: 992px) {
+  .lunchCombo {
+    padding-left: 3rem;
+  }
+}
+
+@media (min-width: 300px) {
+  .menuCP {
+    padding-bottom: 5vh;
+  }
+}
+
+@media (min-width: 576px) {
+  .menuCP {
+    padding-bottom: 5vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .menuCP {
+    padding-bottom: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .menuCP {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.reservation_order {
+  background-color: rgba(154,151,151,0.42);
+  min-height: 100vh;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
